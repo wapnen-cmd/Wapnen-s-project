@@ -11,7 +11,7 @@ class ticket:
 
 concert = Ticket("Concert", 200)
 museum = Ticket("Museum", 150)
-print(concert.name, concert.price())
-print (museum.name, museum.price())
+print(concert.get_name(), concert.price())
+print (museum.get_name(), museum.price())
     
     
