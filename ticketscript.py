@@ -16,5 +16,17 @@ class GroupTicket (Ticket):
     def _init_(self, name, base_price, people):
         super ()._init_(name, base_price)
         self._people = people
+
+    def price (self):
+        return super().price() * self._people *0.8
+
+
+##student = StudentTicket("Museum", 150)
+##group = GroupTicket("Zoo", 300, 4)
+##print(student.get_name(),group.price())
+
+
+
+    
     
     
